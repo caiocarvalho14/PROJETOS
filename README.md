@@ -4,7 +4,7 @@
 Aqui estão alguns dos projetos que desenvolvi e que compartilho com você. Clique em cada link para ver mais detalhes e acessar o código-fonte.
 
 1. **[Website Mercantil Nicolau](https://caiocarvalho14.github.io/MERCANTIL-NICOLAU/)**
-   - Descrição breve do projeto, sua finalidade e tecnologias utilizadas.
+   - Website estático projetado para exibir informações de uma empresa comercial em Parnaíba. Contém botões clicáveis e uma tela da localização no Google Maps. Utilizei HTML, CSS e JS.
    
 2. **[Nome do Projeto 2](link para o projeto)**
    - Descrição breve do projeto, sua finalidade e tecnologias utilizadas.
