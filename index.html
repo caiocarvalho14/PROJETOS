@@ -12,143 +12,176 @@
 </head>
 
 <body>
-    <div class="rodape">
-        <p>Projetado e desenvolvido por<br>Caio Carvalho</p>
-        <hr>
-        <a href="">www.caiocarvalho.dev.br</a>
-    </div>
     <!-- blur efeito -->
     <div class="blur-overlay"></div>
-    <div id="page1" class="page">
-        <div class="container">
-            <div class="social-top">
-                <img class="imagem" src="/assets/home-selfie.png" alt="">
-                <div class="about-links">
-                    <div class="about-text">
-                        <p>Olá, eu sou:</p>
-                        <h1>Caio Carvalho</h1>
-                        <h2>Estudante e Desenvolvedor</h2>
-                        <p>Acompanhe minhas redes sociais:</p>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://github.com/caiocarvalho14" target="_blank"><i class='fab fa-github'
-                                id="git"></i></a>
-                        <a href="https://www.linkedin.com/in/caio-silva-carvalho-326269358/" target="_blank"><i
-                                class='fab fa-linkedin' id="link"></i></a>
-                        <a href="https://www.instagram.com/caio.carvalho9/" target="_blank"><i class='fab fa-instagram'
-                                id="insta"></i></a>
-                        <a href="https://steamcommunity.com/id/desistiremos/" target="_blank"><i class='fab fa-steam'
-                                id="steam"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button class="go-projects prox">Projetos <i class='fas fa-angle-right'></i></button>
-    </div>
-    <div id="page2" class="page">
-        <div class="carrossel-out" id="carrosselId">
-            <div class="carrossel">
-                <div class="project-buttons">
-                    <button onclick="voltar()" class="botoesCarrosselProject"><i class='fas fa-angle-left'></i></button>
-                    <h1>Projetos</h1>
-                    <button onclick="proximo()" class="botoesCarrosselProject"><i class='fas fa-angle-right'></i></button>
-                </div>
-                <div class="slides" id="slides">
-                    <div class="slide">
-                        <a href="https://caiocarvalho14.github.io/MERCANTIL-NICOLAU/" target="_blank">
-                            <div class="projeto">
-                                <img src="/assets/nf.png" alt="">
-                                <div class="projeto-texto">
-                                    <h1>Website Empresarial</h1>
-                                    <p>Website estático projetado para exibir informações de uma empresa comercial em
-                                        Parnaíba. Contém botões clicáveis e uma tela da localização no Google Maps.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <a href="https://caiocarvalho14.github.io/EMPRESA-X/" target="_blank">
-                            <div class="projeto">
-                                <img src="/assets/empresax.jpg" alt="">
-                                <div class="projeto-texto">
-                                    <h1>Projeto de aprendizado Empresa X</h1>
-                                    <p>Website com sistema de cadastro e login com informações hospedadas no cache da
-                                        sessão. Cadastro e Login temporários funcionais.
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <a href="https://caiocarvalho14.github.io/CARDAPIO-LOVSOSWEET/" target="_blank">
-                            <div class="projeto">
-                                <img src="/assets/demolovsosweet.png" alt="">
-                                <div class="projeto-texto">
-                                    <h1>Cardápio automatizado mobile</h1>
-                                    <p>Website projetado para servir de cardápio com botões para adicionar unidades à
-                                        compra. Opção "Ver Pedido" para consultar informações do pedido. Quando o pedido
-                                        é
-                                        realizado o sistema redireciona ao Whatsapp da vendedora com o pedido escrito.
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <a href="https://caiocarvalho14.github.io/PROJETO-JAVASCRIPT/" target="_blank">
-                            <div class="projeto">
-                                <img src="/assets/javasite.png" alt="">
-                                <div class="projeto-texto">
-                                    <h1>Exercícios do curso técnico</h1>
-                                    <p>Website hospedado no github com todos os exercícios e atividades passados pelo
-                                        professor Romano do curso de Informática para Internet em 2025.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
 
+    <div class="desktop">
+        <div class="rodape">
+            <p>Projetado e desenvolvido por<br>Caio Carvalho</p>
+            <hr>
+            <a href="">www.caiocarvalho.dev.br</a>
+        </div>
+        <div id="page1" class="page">
+            <div class="container">
+                <div class="social-top">
+                    <img class="imagem" src="/assets/home-selfie.png" alt="">
+                    <div class="about-links">
+                        <div class="about-text">
+                            <p>Olá, eu sou:</p>
+                            <h1>Caio Carvalho</h1>
+                            <h2>Estudante e Desenvolvedor</h2>
+                            <p>Acompanhe minhas redes sociais:</p>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/caiocarvalho14" target="_blank"><i class='fab fa-github'
+                                    id="git"></i></a>
+                            <a href="https://www.linkedin.com/in/caio-silva-carvalho-326269358/" target="_blank"><i
+                                    class='fab fa-linkedin' id="link"></i></a>
+                            <a href="https://www.instagram.com/caio.carvalho9/" target="_blank"><i
+                                    class='fab fa-instagram' id="insta"></i></a>
+                            <a href="https://steamcommunity.com/id/desistiremos/" target="_blank"><i
+                                    class='fab fa-steam' id="steam"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <button class="go-projects prox">Projetos <i class='fas fa-angle-right'></i></button>
         </div>
-        <div class="botoes">
-            <button class="go-projects ant"><i class='fas fa-angle-left'></i> Anterior</button>
-            <button class="go-projects prox">Próximo <i class='fas fa-angle-right'></i></button>
-        </div>
-    </div>
-    <div id="page3" class="page">
-        <img class="images" src="/assets/aboutme-IMG.png" alt="">
-        <div class="botoes">
-            <button class="go-projects ant"><i class='fas fa-angle-left'></i> Anterior</button>
-            <button class="go-projects prox">Próximo <i class='fas fa-angle-right'></i></button>
-        </div>
-    </div>
-    <div id="page4" class="page">
-        <img src="/assets/setup-IMG.png" class="images" alt="">
-        <div class="botoes">
-            <button class="go-projects ant"><i class='fas fa-angle-left'></i> Anterior</button>
-            <button class="go-projects prox">Próximo <i class='fas fa-angle-right'></i></button>
-        </div>
-    </div>
-    <div id="page5" class="page">
-        <div class="contact">
-            <div class="social-links">
-                <a href="https://github.com/caiocarvalho14" target="_blank"><i class='fab fa-github' id="git">
-                        <h1> GitHub</h1>
-                    </i></a>
-                <a href="https://www.linkedin.com/in/caio-silva-carvalho-326269358/" target="_blank"><i
-                        class='fab fa-linkedin' id="link">
-                        <h1> Linkedin</h1>
-                    </i></a>
-                <a href="https://api.whatsapp.com/send/?phone=5586995633313&text=Ol%C3%A1,+vi+seus+projetos+e+resolvi+entrar+em+contato.&type=phone_number&app_absent=0"
-                    target="_blank">
-                    <i class="fab fa-whatsapp" id="wpp">
-                        <h1> Whatsapp</h1>
-                    </i>
-                </a>
+        <div id="page2" class="page">
+            <div class="carrossel-out" id="carrosselId">
+                <div class="carrossel">
+                    <div class="project-buttons">
+                        <button onclick="voltar()" class="botoesCarrosselProject"><i
+                                class='fas fa-angle-left'></i></button>
+                        <h1>Projetos</h1>
+                        <button onclick="proximo()" class="botoesCarrosselProject"><i
+                                class='fas fa-angle-right'></i></button>
+                    </div>
+                    <div class="slides" id="slides">
+                        <div class="slide">
+                            <a href="https://caiocarvalho14.github.io/MERCANTIL-NICOLAU/" target="_blank">
+                                <div class="projeto">
+                                    <img src="/assets/nf.png" alt="">
+                                    <div class="projeto-texto">
+                                        <h1>Website Empresarial</h1>
+                                        <p>Website estático projetado para exibir informações de uma empresa comercial
+                                            em
+                                            Parnaíba. Contém botões clicáveis e uma tela da localização no Google Maps.
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slide">
+                            <a href="https://caiocarvalho14.github.io/EMPRESA-X/" target="_blank">
+                                <div class="projeto">
+                                    <img src="/assets/empresax.jpg" alt="">
+                                    <div class="projeto-texto">
+                                        <h1>Projeto de aprendizado Empresa X</h1>
+                                        <p>Website com sistema de cadastro e login com informações hospedadas no cache
+                                            da
+                                            sessão. Cadastro e Login temporários funcionais.
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slide">
+                            <a href="https://caiocarvalho14.github.io/CARDAPIO-LOVSOSWEET/" target="_blank">
+                                <div class="projeto">
+                                    <img src="/assets/demolovsosweet.png" alt="">
+                                    <div class="projeto-texto">
+                                        <h1>Cardápio automatizado mobile</h1>
+                                        <p>Website projetado para servir de cardápio com botões para adicionar unidades
+                                            à
+                                            compra. Opção "Ver Pedido" para consultar informações do pedido. Quando o
+                                            pedido
+                                            é
+                                            realizado o sistema redireciona ao Whatsapp da vendedora com o pedido
+                                            escrito.
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slide">
+                            <a href="https://caiocarvalho14.github.io/PROJETO-JAVASCRIPT/" target="_blank">
+                                <div class="projeto">
+                                    <img src="/assets/javasite.png" alt="">
+                                    <div class="projeto-texto">
+                                        <h1>Exercícios do curso técnico</h1>
+                                        <p>Website hospedado no github com todos os exercícios e atividades passados
+                                            pelo
+                                            professor Romano do curso de Informática para Internet em 2025.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="botoes">
+                <button class="go-projects ant"><i class='fas fa-angle-left'></i> Anterior</button>
+                <button class="go-projects prox">Próximo <i class='fas fa-angle-right'></i></button>
             </div>
         </div>
-        <div class="botoes">
-            <button class="go-projects ant"><i class='fas fa-angle-left'></i> Anterior</button>
+        <div id="page3" class="page">
+            <img class="images" src="/assets/aboutme-IMG.png" alt="">
+            <div class="botoes">
+                <button class="go-projects ant"><i class='fas fa-angle-left'></i> Anterior</button>
+                <button class="go-projects prox">Próximo <i class='fas fa-angle-right'></i></button>
+            </div>
+        </div>
+        <div id="page4" class="page">
+            <img src="/assets/setup-IMG.png" class="images" alt="">
+            <div class="botoes">
+                <button class="go-projects ant"><i class='fas fa-angle-left'></i> Anterior</button>
+                <button class="go-projects prox">Próximo <i class='fas fa-angle-right'></i></button>
+            </div>
+        </div>
+        <div id="page5" class="page">
+            <div class="contact">
+                <div class="social-links">
+                    <a href="https://github.com/caiocarvalho14" target="_blank"><i class='fab fa-github' id="git">
+                            <h1> GitHub</h1>
+                        </i></a>
+                    <a href="https://www.linkedin.com/in/caio-silva-carvalho-326269358/" target="_blank"><i
+                            class='fab fa-linkedin' id="link">
+                            <h1> Linkedin</h1>
+                        </i></a>
+                    <a href="https://api.whatsapp.com/send/?phone=5586995633313&text=Ol%C3%A1,+vi+seus+projetos+e+resolvi+entrar+em+contato.&type=phone_number&app_absent=0"
+                        target="_blank">
+                        <i class="fab fa-whatsapp" id="wpp">
+                            <h1> Whatsapp</h1>
+                        </i>
+                    </a>
+                </div>
+            </div>
+            <div class="botoes">
+                <button class="go-projects ant"><i class='fas fa-angle-left'></i> Anterior</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MOBILE -->
+    <div id="mobile">
+        <div id="mPage1" class="mPage">
+            <img src="" alt="">
+            <img src="/assets/acessDesktop.png" alt="">
+            <!-- <div class="box">
+                <p>Olá, eu sou:</p>
+                <h1>Caio Carvalho</h1>
+                <h2>Estudante e Desenvolvedor</h2>
+                <p>Acompanhe minhas redes sociais:</p>
+                <img src="/assets/selfie.png" alt="">
+                <div class="social-links">
+                    
+                </div>
+            </div>
+            <div class="mBotoes">
+                <button>Projetos <i class='fas fa-angle-right'></i></button>
+            </div> -->
         </div>
     </div>
     <script src="script.js"></script>

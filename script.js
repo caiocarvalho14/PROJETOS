@@ -82,3 +82,7 @@ function esconderBotoes() {
 
 carrossel.addEventListener("mouseenter", mostrarBotoes);
 carrossel.addEventListener("mouseleave", esconderBotoes);
+
+
+
+// MOBILE
