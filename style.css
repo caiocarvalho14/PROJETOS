@@ -226,7 +226,7 @@ hr {
     transition: 0.1s;
     position: relative;
     width: 60vw;
-    height: 50vh;
+    height: 49vh;
     overflow: hidden;
     border: 1px solid #ccc;
 }
@@ -240,6 +240,7 @@ hr {
 }
 
 .slide {
+    padding: 3vh 0 0 0;
     background-color: white;
     min-width: 100%;
     display: flex;
@@ -259,15 +260,28 @@ hr {
 .botoes {
     text-align: center;
 }
-
-.carrossel-out>button {
+.project-buttons{
+    background-color: #050044;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 2vh 0 2vh 0;
+}
+.carrossel-out>.carrossel>.project-buttons>h1 {
+    color: white;
+}
+.carrossel-out>.carrossel>.project-buttons>button {
+    border-radius: 10px;
+    color: #050044;
+    border: none;
     height: 4vh;
-    padding: 8px 16px;
     margin: 0 5px;
-    font-size: 16px;
+    font-size: 3vh;
+    width: 20vh;
 }
 
-.carrossel-out>button:hover {
+.carrossel-out>.carrossel>.project-buttons>button:hover {
     cursor: pointer;
     transition: 0.3s;
     color: white;
@@ -305,8 +319,7 @@ hr {
 
 .carrossel {
     h1 {
-        padding-top: 1vh;
-        background-color: white;
+        color:#050044;
     }
 
     hr {
