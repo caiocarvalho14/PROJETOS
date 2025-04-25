@@ -12,6 +12,10 @@
 </head>
 
 <body>
+
+    <!-- blur efeito -->
+    <div class="blur-overlay"></div>
+
     <div id="page1" class="page">
         <div class="container">
             <div class="social-top">
@@ -23,10 +27,10 @@
                         <p>Acompanhe minhas redes sociais:</p>
                     </div>
                     <div class="social-links">
-                        <i class='fab fa-github' id="git"></i>
-                        <i class='fab fa-linkedin' id="link"></i>
-                        <i class='fab fa-instagram' id="insta"></i>
-                        <i class='fab fa-steam' id="steam"></i>
+                        <a href="https://github.com/caiocarvalho14" target="_blank"><i class='fab fa-github' id="git"></i></a>
+                        <a href="https://www.linkedin.com/in/caio-silva-carvalho-326269358/" target="_blank"><i class='fab fa-linkedin' id="link"></i></a>
+                        <a href="https://www.instagram.com/caio.carvalho9/" target="_blank"><i class='fab fa-instagram' id="insta"></i></a>
+                        <a href="https://steamcommunity.com/id/desistiremos/" target="_blank"><i class='fab fa-steam' id="steam"></i></a>
                     </div>
                 </div>
                 <img class="imagem" src="/assets/selfie.png" alt="">
@@ -34,128 +38,124 @@
         </div>
         <button class="go-projects prox">Projetos <i class='fas fa-angle-right'></i></button>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
     <div id="page2" class="page">
-        <div class="container-page2">
-            <h1>Meus Projetos</h1>
-            <hr>
-            <div class="projects">
-                <a href="https://caiocarvalho14.github.io/MERCANTIL-NICOLAU/" target="_blank">
-                    <div class="projeto">
-                        <img src="/assets/nf.png" alt="">
-                        <div class="projeto-texto">
-                            <h1>Website Empresarial</h1>
-                            <p>Website estático projetado para exibir informações de uma empresa comercial em
-                                Parnaíba. Contém botões clicáveis e uma tela da localização no Google Maps.</p>
-                        </div>
+        <div class="carrossel-out">
+            <button onclick="voltar()"><i class='fas fa-angle-left'></i></button>
+            <div class="carrossel">
+                <h1>Projetos</h1>
+                <hr>
+                <div class="slides" id="slides">
+                    <div class="slide">
+                        <a href="https://caiocarvalho14.github.io/MERCANTIL-NICOLAU/" target="_blank">
+                            <div class="projeto">
+                                <img src="/assets/nf.png" alt="">
+                                <div class="projeto-texto">
+                                    <h1>Website Empresarial</h1>
+                                    <p>Website estático projetado para exibir informações de uma empresa comercial em
+                                        Parnaíba. Contém botões clicáveis e uma tela da localização no Google Maps.</p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                </a>
 
-                <a href="https://caiocarvalho14.github.io/EMPRESA-X/" target="_blank">
-                    <div class="projeto">
-                        <img src="/assets/empresax.jpg" alt="">
-                        <div class="projeto-texto">
-                            <h1>Projeto de aprendizado Empresa X</h1>
-                            <p>Website com sistema de cadastro e login com informações hospedadas no cache da
-                                sessão. Cadastro e Login temporários funcionais.
-                            </p>
-                        </div>
+                    <div class="slide">
+                        <a href="https://caiocarvalho14.github.io/EMPRESA-X/" target="_blank">
+                            <div class="projeto">
+                                <img src="/assets/empresax.jpg" alt="">
+                                <div class="projeto-texto">
+                                    <h1>Projeto de aprendizado Empresa X</h1>
+                                    <p>Website com sistema de cadastro e login com informações hospedadas no cache da
+                                        sessão. Cadastro e Login temporários funcionais.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                </a>
 
-                <a href="https://caiocarvalho14.github.io/CARDAPIO-LOVSOSWEET/" target="_blank">
-                    <div class="projeto">
-                        <img src="/assets/demolovsosweet.png" alt="">
-                        <div class="projeto-texto">
-                            <h1>Cardápio automatizado mobile</h1>
-                            <p>Website projetado para servir de cardápio com botões para adicionar unidades à
-                                compra. Opção "Ver Pedido" para consultar informações do pedido. Quando o pedido é
-                                realizado o sistema redireciona ao Whatsapp da vendedora com o pedido escrito.</p>
-                        </div>
+                    <div class="slide">
+                        <a href="https://caiocarvalho14.github.io/CARDAPIO-LOVSOSWEET/" target="_blank">
+                            <div class="projeto">
+                                <img src="/assets/demolovsosweet.png" alt="">
+                                <div class="projeto-texto">
+                                    <h1>Cardápio automatizado mobile</h1>
+                                    <p>Website projetado para servir de cardápio com botões para adicionar unidades à
+                                        compra. Opção "Ver Pedido" para consultar informações do pedido. Quando o pedido
+                                        é
+                                        realizado o sistema redireciona ao Whatsapp da vendedora com o pedido escrito.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                </a>
 
-                <a href="https://caiocarvalho14.github.io/PROJETO-JAVASCRIPT/" target="_blank">
-                    <div class="projeto">
-                        <img src="/assets/javasite.png" alt="">
-                        <div class="projeto-texto">
-                            <h1>Exercícios do curso técnico</h1>
-                            <p>Website hospedado no github com todos os exercícios e atividades passados pelo
-                                professor Romano do curso de Informática para Internet em 2025.</p>
-                        </div>
+                    <div class="slide">
+                        <a href="https://caiocarvalho14.github.io/PROJETO-JAVASCRIPT/" target="_blank">
+                            <div class="projeto">
+                                <img src="/assets/javasite.png" alt="">
+                                <div class="projeto-texto">
+                                    <h1>Exercícios do curso técnico</h1>
+                                    <p>Website hospedado no github com todos os exercícios e atividades passados pelo
+                                        professor Romano do curso de Informática para Internet em 2025.</p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                </a>
+
+                </div>
+
 
             </div>
+
+
+            <button onclick="proximo()"><i class='fas fa-angle-right'></i></button>
+
         </div>
+
         <div class="botoes">
             <button class="go-projects ant"><i class='fas fa-angle-left'></i> Anterior</button>
             <button class="go-projects prox">Próximo <i class='fas fa-angle-right'></i></button>
         </div>
     </div>
-    <div id="page3" class="page">
-        <div class="container-page2">
-            <h1>Sobre Mim</h1>
-            <hr>
-            <h2>Olá! Sou Caio, tenho 17 anos e estou iniciando minha jornada no mundo da programação. Atualmente, estou fazendo um curso técnico de Desenvolvimento Web no SENAI, onde aprendo a construir sites e aplicações do zero.
 
-                Tenho uma grande paixão por aprender novas linguagens de programação e estou sempre em busca de expandir meus conhecimentos em tecnologia. Gosto de me desafiar com novos conceitos, ferramentas e maneiras de pensar todos os dias.
-                
-                Fora da programação, também sou fã de leitura. Acredito que os livros são uma poderosa forma de explorar ideias, estimular a criatividade e adquirir novas perspectivas.
-                
-                Estou muito motivado e curioso para crescer como desenvolvedor e estou animado com a jornada que tenho pela frente. Se quiser acompanhar minha evolução ou trocar ideias sobre tecnologia, sinta-se à vontade para se conectar!
-                
-                </h2>
-        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="page3" class="page">
+        <img class="images" src="/assets/aboutme-IMG.png" alt="">
         <div class="botoes">
             <button class="go-projects ant"><i class='fas fa-angle-left'></i> Anterior</button>
             <button class="go-projects prox">Próximo <i class='fas fa-angle-right'></i></button>
         </div>
     </div>
     <div id="page4" class="page">
-        <div class="container-page2">
-            <h1>PAGINA 4</h1>
-            <hr>
-            <div class="projects">
-                <div class="projeto">
-                    <img src="/assets/nf.png" alt="">
-                    <div class="projeto-texto">
-                        <h1>Website Empresarial</h1>
-                        <p>Website estático projetado para exibir informações de uma empresa comercial em
-                            Parnaíba. Contém botões clicáveis e uma tela da localização no Google Maps.</p>
-                    </div>
-                </div>
-
-                <div class="projeto">
-                    <img src="/assets/empresax.jpg" alt="">
-                    <div class="projeto-texto">
-                        <h1>Projeto de aprendizado Empresa X</h1>
-                        <p>Website com sistema de cadastro e login com informações hospedadas no cache da
-                            sessão. Cadastro e Login temporários funcionais.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="projeto">
-                    <img src="/assets/demolovsosweet.png" alt="">
-                    <div class="projeto-texto">
-                        <h1>Cardápio automatizado mobile</h1>
-                        <p>Website projetado para servir de cardápio com botões para adicionar unidades à
-                            compra. Opção "Ver Pedido" para consultar informações do pedido. Quando o pedido é
-                            realizado o sistema redireciona ao Whatsapp da vendedora com o pedido escrito.</p>
-                    </div>
-                </div>
-
-                <div class="projeto">
-                    <img src="/assets/javasite.png" alt="">
-                    <div class="projeto-texto">
-                        <h1>Exercícios do curso técnico</h1>
-                        <p>Website hospedado no github com todos os exercícios e atividades passados pelo
-                            professor Romano do curso de Informática para Internet em 2025.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+        <img src="/assets/setup-IMG.png" class="images" alt="">
         <div class="botoes">
             <button class="go-projects ant"><i class='fas fa-angle-left'></i> Anterior</button>
             <button class="go-projects prox">Próximo <i class='fas fa-angle-right'></i></button>

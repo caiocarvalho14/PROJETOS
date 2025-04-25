@@ -13,10 +13,28 @@ body {
     color: #050044;
     outline-color: #050044;
 }
-a{
+
+a {
     color: inherit;
     text-decoration-line: none;
 }
+
+/* BLUR */
+.blur-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.1); /* opcional: dá um glow leve */
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+  }
+  
+
 #page1 {
     text-align: center;
 }
@@ -54,7 +72,7 @@ a{
     text-align: start;
 }
 
-.social-links>i {
+.social-links>a>i {
     border-radius: 1vh;
     transition: 0.1s;
     background-color: white;
@@ -68,7 +86,7 @@ a{
     box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
-.social-links>i:hover {
+.social-links>a>i:hover {
     transition: 0.3s;
     transform: scale(1.5);
 }
@@ -140,31 +158,6 @@ a{
     gap: 1vh;
 }
 
-.projeto {
-    cursor: pointer;
-    color: white;
-    padding: 1vh;
-    background-color: #060053;
-    display: flex;
-}
-
-.projeto>img {
-    width: 50%;
-}
-
-.projeto-texto {
-    padding: 1vh;
-}
-
-.projeto-texto>p {
-    text-align: justify;
-}
-
-.projeto-texto>h1 {
-    font-size: 2vh;
-    text-align: center;
-}
-
 hr {
     margin: 2vh 0;
 }
@@ -191,6 +184,7 @@ hr {
 
 .page {
     transition: opacity 0.2s ease;
+    text-align: center;
 }
 
 /* TESTES */
@@ -201,8 +195,104 @@ hr {
 
 /* PAGINAS */
 
-#page3{
-    h2{
+#page3 {
+    h2 {
         text-align: justify;
     }
+}
+
+
+/* carrossel */
+.carrossel {
+    background-color: white;
+    transition: 0.1s;
+    position: relative;
+    width: 60vw;
+    height: 50vh;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+.carrossel-out{
+
+}
+.slides {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+}
+
+.slide {
+    background-color: white;
+    min-width: 100%;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background-color: #ffffff;
+}
+.carrossel:hover{
+    transition: 0.3s;
+    transform: scale(1.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 255, 0.1);
+}
+
+.botoes {
+    text-align: center;
+}
+
+.carrossel-out> button {
+    height: 4vh;
+    padding: 8px 16px;
+    margin: 0 5px;
+    font-size: 16px;
+}
+.carrossel-out > button:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+    outline: auto;
+    background-color: #050044;
+}
+
+.carrossel-out {
+    display: flex;
+    align-items: center;
+}
+
+.projeto>img {
+    padding: 0 0 1vw 1vw;
+    width: 50%;
+    max-height: 35vh;
+}
+
+.projeto {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: ;
+}
+.projeto-texto{
+    padding: 5vh;
+    color: #050044;
+    text-align: justify;
+    h1{
+        font-size: 3vh;
+    }
+}
+.carrossel{
+    h1{
+        padding-top: 1vh;
+        background-color: white;
+    }
+    hr{
+        background-color: white;
+    }
+}
+
+
+
+/* PAGINA 3 */
+.images{
+    width: 50vw;
 }

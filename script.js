@@ -40,3 +40,27 @@ botoesAnt.forEach(botao => {
         }
     });
 });
+
+
+// CARROSSEL
+let indiceAtual = 0;
+
+function atualizarCarrossel() {
+  const slides = document.getElementById('slides');
+  slides.style.transform = `translateX(-${indiceAtual * 100}%)`;
+}
+
+function proximo() {
+  const totalSlides = document.querySelectorAll('.slide').length;
+  if (indiceAtual < totalSlides - 1) {
+    indiceAtual++;
+    atualizarCarrossel();
+  }
+}
+
+function voltar() {
+  if (indiceAtual > 0) {
+    indiceAtual--;
+    atualizarCarrossel();
+  }
+}
