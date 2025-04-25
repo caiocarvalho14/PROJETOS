@@ -64,3 +64,21 @@ function voltar() {
     atualizarCarrossel();
   }
 }
+// MOSTRAR BOTOES
+let carrossel = document.getElementById("carrosselId");
+let botoesCarrossel = document.querySelectorAll(".botoesCarrosselProject");
+
+function mostrarBotoes() {
+  botoesCarrossel.forEach(botao => {
+    botao.style.animation = "fadeIn 0.5s forwards";
+  });
+}
+
+function esconderBotoes() {
+  botoesCarrossel.forEach(botao => {
+    botao.style.animation = "fadeOut 0.5s forwards";
+  });
+}
+
+carrossel.addEventListener("mouseenter", mostrarBotoes);
+carrossel.addEventListener("mouseleave", esconderBotoes);

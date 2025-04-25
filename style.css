@@ -280,7 +280,9 @@ hr {
     font-size: 3vh;
     width: 20vh;
 }
-
+.botoesCarrosselProject{
+    opacity: 0;
+}
 .carrossel-out>.carrossel>.project-buttons>button:hover {
     cursor: pointer;
     transition: 0.3s;
