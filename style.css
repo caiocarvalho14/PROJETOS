@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+}
+
+body {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #060053;
+    height: 100vh;
+    font-family: arial;
+    color: #050044;
+    outline-color: #050044;
+}
+a{
+    color: inherit;
+    text-decoration-line: none;
+}
+#page1 {
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+}
+
+.social-top {
+    outline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-top>img {
+    width: 40%;
+}
+
+/* .social-top > .imagem{
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+        -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+} */
+.about-links {
+    font-size: 1.2vw;
+}
+
+.about-text {
+    text-align: start;
+}
+
+.social-links {
+    text-align: start;
+}
+
+.social-links>i {
+    border-radius: 1vh;
+    transition: 0.1s;
+    background-color: white;
+    cursor: pointer;
+    margin-top: 2vh;
+    text-align: center;
+    font-size: 2vw;
+    padding: 10px;
+    width: 15%;
+
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.social-links>i:hover {
+    transition: 0.3s;
+    transform: scale(1.5);
+}
+
+/* HOVER EFEITOS */
+#git:hover {
+    color: white;
+    background-color: black;
+}
+
+#insta:hover {
+    color: white;
+    background: radial-gradient(circle at 30% 107%,
+            #fdf497 0%,
+            #fdf497 5%,
+            #fd5949 45%,
+            #d6249f 60%,
+            #285AEB 90%);
+}
+
+#link:hover {
+    color: #0077B5;
+    background-color: white;
+}
+
+#steam:hover {
+    color: #fcfcfc;
+    background: linear-gradient(to bottom, #111d2e, #1385b6);
+}
+
+/*  */
+.go-projects {
+    transition: 0.2s;
+    width: 12vw;
+    border-radius: 1vh;
+    padding: 1vh;
+    cursor: pointer;
+    margin-top: 2vh;
+    background-color: white;
+    border: none;
+    font-size: 3vh;
+    color: #050044;
+}
+
+.go-projects:hover {
+    transition: 0.3s;
+    color: white;
+    outline: auto;
+    background-color: #050044;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* PAGE 2 */
+.container-page2 {
+    width: 70vw;
+    height: 60vh;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1vh;
+}
+
+.projeto {
+    cursor: pointer;
+    color: white;
+    padding: 1vh;
+    background-color: #060053;
+    display: flex;
+}
+
+.projeto>img {
+    width: 50%;
+}
+
+.projeto-texto {
+    padding: 1vh;
+}
+
+.projeto-texto>p {
+    text-align: justify;
+}
+
+.projeto-texto>h1 {
+    font-size: 2vh;
+    text-align: center;
+}
+
+hr {
+    margin: 2vh 0;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.page {
+    transition: opacity 0.2s ease;
+}
+
+/* TESTES */
+.visible {
+    display: block;
+    animation: fadeIn 0.2s forwards;
+}
+
+/* PAGINAS */
+
+#page3{
+    h2{
+        text-align: justify;
+    }
+}
