@@ -6,3 +6,7 @@ azul claro
 
 azul preto
 #050044
+
+git add .
+git commit -m "newAlteration"
+git push origin main

@@ -411,6 +411,29 @@
 
 /* MOBILE / DEVICE */
 @media screen and (max-width:1000px){
+    .visible {
+        display: block;
+        animation: fadeIn 0.5s forwards;
+    }
+    @keyframes fadeOut {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
     body{
         background-color: #ffffff;
         height: 100vh;
@@ -511,6 +534,11 @@
             padding: 2vh;
         }
         button:active{
+            outline: auto #050044;;
+            background-color: white;
+            color: #050044;
+        }
+        button:hover{
             outline: auto #050044;;
             background-color: white;
             color: #050044;
