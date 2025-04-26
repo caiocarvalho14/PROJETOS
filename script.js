@@ -128,12 +128,6 @@ botoesAntM.forEach(botao => {
         }
     });
 });
-
-
-
-
-
-
 // carrossel mob
 let indiceAtualMobile = 0;
 
@@ -175,3 +169,45 @@ function esconderBotoesMobile() {
 
 carrosselMobile.addEventListener("mouseenter", mostrarBotoesMobile);
 carrosselMobile.addEventListener("mouseleave", esconderBotoesMobile);
+
+
+// carrossel
+let indiceMobile = 0;
+
+function atualizarCarrosselMobile() {
+  const slides = document.getElementById('slidesMobile');
+  slides.style.transform = `translateX(-${indiceMobile * 100}%)`;
+}
+
+function proximoMobile() {
+  const totalSlides = document.querySelectorAll('.slide-mob').length;
+  if (indiceMobile < totalSlides - 1) {
+    indiceMobile++;
+    atualizarCarrosselMobile();
+  }
+}
+
+function voltarMobile() {
+  if (indiceMobile > 0) {
+    indiceMobile--;
+    atualizarCarrosselMobile();
+  }
+}
+
+let carrosselMob = document.getElementById("carrosselMobile");
+let botoesCarrosselMob = document.querySelectorAll(".botoesCarrosselMob");
+
+function mostrarBotoesMob() {
+  botoesCarrosselMob.forEach(botao => {
+    botao.style.animation = "fadeIn 0.5s forwards";
+  });
+}
+
+function esconderBotoesMob() {
+  botoesCarrosselMob.forEach(botao => {
+    botao.style.animation = "fadeOut 0.5s forwards";
+  });
+}
+
+carrosselMob.addEventListener("mouseenter", mostrarBotoesMob);
+carrosselMob.addEventListener("mouseleave", esconderBotoesMob);
