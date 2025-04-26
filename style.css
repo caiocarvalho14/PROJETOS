@@ -3,6 +3,12 @@
 }
 
 @media screen and (min-width:1000px){
+    /* esconder paginas */
+    #page2,#page3,#page4,#page5{
+        display: none;
+    }
+
+
     #mobile{
         display: none;
     }
@@ -80,8 +86,7 @@
     }
 
     /* .social-top > .imagem{
-    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
-        -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+    
 } */
     .about-links {
         font-size: 1.2vw;
@@ -354,7 +359,6 @@
 
     /* PAGINA 5 */
     .contact {
-        background-image: url(/assets/about-IMG.png);
         background-size: 100%;
         width: 50vw;
         height: 60vh;
@@ -393,6 +397,9 @@
         font-family: arial;
         font-size: 2vw;
     }
+    .contact>.social-links>h1 {
+        color: white;
+    }
 
     #page5>.botoes {
         justify-content: center;
@@ -406,11 +413,16 @@
 @media screen and (max-width:1000px){
     body{
         background-color: #ffffff;
-        width: 100vw;
         height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
+        font-family: arial;
+        color: #050044;
+    }
+    a{
+        color: inherit;
+        text-decoration-line: none;
     }
     img{
         width: 100vw;
@@ -428,11 +440,119 @@
     }
     
     .box>img{
-        width: 50%;
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+        -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+        width: 80%;
     }
-    #mPage1{
+    #page1{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    .social-links-m{
+        padding: 1vh 0 4vh 0;
+    }
+    .social-links-m>a>i{
+        border-radius: 25%;
+        padding: 2vw;
+        font-size: 5vh;
+    }
+    #git{
+        color: white;
+        background-color: black;
+    }
+
+    #insta{
+        color: white;
+        background: radial-gradient(circle at 30% 107%,
+                #fdf497 0%,
+                #fdf497 5%,
+                #fd5949 45%,
+                #d6249f 60%,
+                #285AEB 90%);
+    }
+
+    #link{
+        color: #ffffff;
+        background-color: #0077B5;
+    }
+
+    #steam{
+        color: #fcfcfc;
+        background: linear-gradient(to bottom, #111d2e, #1385b6);
+    }
+
+    #wpp{
+        color: #fcfcfc;
+        background-color: #25D366;
+    }
+    #email{
+        outline: auto #050044;
+    }
+
+    /* pag 3 */
+    #pagem3>.box>img{
+        width: 100%;
+    }
+    #pagem3{
+        width: 100vw;
+        display: flex;
+    }
+    .mBotoes{
+        display: flex;
+        justify-content: space-around;
+        button{
+            min-width: 35vw;
+            border-radius: 3vw;
+            border: none;
+            background-color: #050044;
+            color: white;
+            font-size: 7vh;
+            padding: 2vh;
+        }
+        button:active{
+            outline: auto #050044;;
+            background-color: white;
+            color: #050044;
+        }
+    }
+    .slidesMobile {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        width: 100%;
+        overflow: hidden;
+      }
+      
+      .slideMobile {
+        min-width: 100%;
+        box-sizing: border-box;
+      }
+      
+      .botoesCarrosselProjectMobile {
+        opacity: 0;
+        animation: fadeOut 0.5s forwards;
+        transition: opacity 0.3s;
+      }
+      
+
+
+      /* PAG 5 */
+    .contact-linksm{
+        margin: 2vh 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+    } 
+    .contact-linksm>a>i{
+        padding: 1vh;
+        border-radius: 1vh;
+        display: flex;
+        align-items: center;
+        font-size: 8vh;
+        justify-content: space-evenly;
+    } 
+    .contact-linksm>a>i>h1{
+        font-family: arial;
+        font-size: 3vh;
+    } 
 }
