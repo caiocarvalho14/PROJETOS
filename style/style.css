@@ -5,10 +5,11 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-color: #0e0774;
     font-family: poppins;
     color: white;
     overflow-x: hidden;
+    background: linear-gradient(to bottom, #0e0774, #0b0561);
+    background-attachment: fixed;
 }
 
 a {
@@ -25,12 +26,13 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background-color: #0b0052;
 }
 
 nav>img {
     transition: 0.1s;
     cursor: pointer;
-    height: 100%;
+    height: 70%;
 }
 
 nav>img:hover {
@@ -80,7 +82,7 @@ hr {
 }
 
 #about-1>img {
-    padding-top: 2vh;
+    padding-top: 0vh;
     border-radius: 2vh 2vh 0 0;
     background-color: #3a1de1;
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
@@ -102,6 +104,7 @@ hr {
 
 #about-2 {
     margin-top: 7vh;
+    
 }
 
 #about-2-text {
@@ -141,6 +144,7 @@ hr {
 }
 
 #habilites-cards>.card {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
     transition: 0.1s;
     border-radius: 1.5vh;
     background: linear-gradient(to bottom, #0e0774, #0000003a);
@@ -194,7 +198,7 @@ hr {
 .rodape {
     padding: 1vw 0;
     width: 100%;
-    background-color: #0b0650;
+    background-color: #080535;
 }
 
 #git:hover {
