@@ -287,7 +287,42 @@ a {
     width: 100%;
 }
 /* CONTATO */
+#contato{
+    display: flex;
+    gap: 4vw;
+}
+.form{
+
+    height: 60vh;
+    width: 100%;
+}
+.form>form{
+    gap: 1vh;
+    font-family: arial;
+    display: flex;
+    flex-direction: column;
+}
+.form>form>#name-form,#email-form,#numero-form{
+    font-size: 100%;
+    height: 4vh;
+}
+.form>form>input,textarea,button{
+    border-radius: 1vh;
+    border: none;
+    background-color: #3A1DE1;
+    color: white;
+}
+.form>form>textarea{
+    height: 30vh;
+}
+.form>form>input::placeholder,textarea::placeholder{
+    color: white;
+}
+.form>form>button{
+    font-size: 4vh;
+}
 .contato-links {
+    justify-content: center;
     gap: 1vh;
     display: flex;
     flex-direction: column;

@@ -156,6 +156,15 @@
                     </div>
                 </a>
             </div>
+            <div class="form scroll">
+                <form action="https://formsubmit.co/caioscphb@gmail.com" method="POST">
+                    <input type="text" name="NOME" id="name-form" required placeholder="Seu nome">
+                    <input type="email" name="EMAIL" id="email-form" required placeholder="Seu email">
+                    <input type="number" name="NUMERO" id="numero-form" required id="" placeholder="Seu número">
+                    <textarea placeholder="Sua mensagem" id="area-form" class="form-control" name="MENSAGEM" rows="10" required></textarea>
+                    <button type="submit">Enviar Mensagem</button>
+                </form>
+            </div>
         </div>
 
         <footer>
@@ -177,7 +186,7 @@
         const btnTopo = document.getElementById('btnTopo');
 
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 200) { 
+            if (window.scrollY > 200) {
                 btnTopo.style.display = 'block';
             } else {
                 btnTopo.style.display = 'none';
