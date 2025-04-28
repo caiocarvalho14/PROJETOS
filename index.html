@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caio Carvalho - Dev</title>
+    <link rel="stylesheet" href="/style/mobile.css">
     <link rel="stylesheet" href="/style/style.css">
     <link rel="shortcut icon" href="/assets/favicon.svg" type="image/x-icon">
-
-
+    <!-- W3S -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,125 +19,110 @@
 </head>
 
 <body>
-    <nav>
-        <img src="/assets/topSVG.svg" alt="">
-        <div class="nav-links">
-            <h1 id="about-link">Sobre</h1>
-            <h1 id="habi-link">Habilidades</h1>
-            <h1 id="projeto-link">Projetos</h1>
-            <h1 id="contato-link">Contato</h1>
-        </div>
-    </nav>
     <div class="container">
-        <div id="about" class="item">
-            <div id="about-1">
+        <div id="section-1" class="scroll-snap">
+            <nav>
+                <img src="/assets/topSVG.svg" alt="">
+                <div class="nav-links">
+                    <h1 id="about-link">Sobre</h1>
+                    <h1 id="habi-link">Habilidades</h1>
+                    <h1 id="projeto-link">Projetos</h1>
+                    <h1 id="contato-link">Contato</h1>
+                </div>
+            </nav>
+            <section>
                 <img src="/assets/home-selfie.png" alt="">
-                <section>
+                <div class="section1-text">
                     <h1>Caio Carvalho</h1>
                     <p>Desenvolvedor Front-End</p>
-                    <a href="https://www.linkedin.com/in/caio-silva-carvalho-326269358/" target="_blank"><i class='fab fa-linkedin'></i></a>
+                    <a href="https://www.linkedin.com/in/caio-silva-carvalho-326269358/" target="_blank"><i
+                            class='fab fa-linkedin'></i></a>
                     <a href="https://github.com/caiocarvalho14" target="_blank"><i class='fab fa-github'></i></a>
-                    <a href="https://www.instagram.com/caio.carvalho9/" target="_blank"><i class='fab fa-instagram'></i></a>
+                    <a href="https://www.instagram.com/caio.carvalho9/" target="_blank"><i
+                            class='fab fa-instagram'></i></a>
                     <a href="http://wa.me//86995633313" target="_blank"><i class='fab fa-whatsapp'></i></a>
                     <a href="mailto:caioscphb@gmail.com"><i class='fas fa-envelope' id="email"></i></a>
-                </section>
-            </div>
-            <div id="about-2">
-                <h1 id="title">Sobre Mim</h1>
-                <div id="about-2-text">
-                    <p>Tenho 17 anos e estou iniciando minha jornada no mundo da programação. Atualmente, estou fazendo
-                        um
-                        curso técnico de Desenvolvimento Web no SENAI, onde aprendo a construir sites e aplicações do
-                        zero.
-                        Tenho uma grande paixão por aprender novas linguagens de programação e estou sempre em busca de
-                        expandir meus conhecimentos em tecnologia. Gosto de me desafiar com novos conceitos, ferramentas
-                        e
-                        maneiras de pensar todos os dias. Fora da programação, também sou fã de leitura. Acredito que os
-                        livros são uma poderosa forma de explorar ideias, estimular a criatividade e adquirir novas
-                        perspectivas. Estou muito motivado e curioso para crescer como desenvolvedor e estou animado com
-                        a
-                        jornada que tenho pela frente. Se quiser acompanhar minha evolução ou trocar ideias sobre
-                        tecnologia, sinta-se à vontade para se conectar!
-                    </p>
                 </div>
-            </div>
+            </section>
         </div>
-        <div id="habilities" class="item">
-            <h1 id="title">Habilidades</h1>
-            <div id="habilites-cards">
+        <!-- about me -->
+        <h1 class="title scroll scroll-snap" id="about">Sobre mim</h1>
+        <div id="section-2" class="item-width scroll">
+            <img src="/assets/about1.png" alt="">
+            <nav class="item" id="about-item">
+                <h1>OLÁ, EU SOU O</h1>
+                <h2>Caio Carvalho</h2>
+                <p>Tenho 17 anos e estou começando minha jornada na programação. Atualmente, faço o curso técnico de
+                    Informática para Internet no SENAI, onde aprendo a criar sites e aplicações do zero. Sou apaixonado
+                    por tecnologia, gosto de me desafiar com novos conceitos e estou sempre buscando evoluir.<br>Fora da
+                    programação, adoro ler para expandir minha criatividade e visão de mundo. Estou animado para crescer
+                    como desenvolvedor e aberto a trocar ideias sobre tecnologia!</p>
+                <a href="https://www.linkedin.com/in/caio-silva-carvalho-326269358/" target="_blank"><i
+                        class='fab fa-linkedin'></i></a>
+                <a href="https://github.com/caiocarvalho14" target="_blank"><i class='fab fa-github'></i></a>
+                <a href="https://www.instagram.com/caio.carvalho9/" target="_blank"><i class='fab fa-instagram'></i></a>
+                <a href="http://wa.me//86995633313" target="_blank"><i class='fab fa-whatsapp'></i></a>
+                <a href="mailto:caioscphb@gmail.com"><i class='fas fa-envelope' id="email"></i></a>
+            </nav>
+        </div>
+        <h1 class="title scroll scroll-snap" id="habilities">Habilidades</h1>
+        <div id="section-2" class="item-width scroll">
+            <div class="cards">
                 <div class="card">
                     <img src="/assets/H-card1.png" alt="">
-                    <p>Experiência com tecnologia HTML5, CSS3 e JavaScript.</p>
+                    <div class="card-text">
+                        <h1>Dev Front-End</h1>
+                        <p>Desenvolvimento de websites responsivos com amplo conhecimento de HTML5, CSS3 e JavaScript.
+                        </p>
+                    </div>
                 </div>
                 <div class="card">
                     <img src="/assets/git-github.svg" alt="">
-                    <p>Conhecimento em tecnologia de versionamento Git e Github.</p>
+                    <div class="card-text">
+                        <h1>Controle de Versão</h1>
+                        <p>Gerenciamento de projetos e colaboração em equipe usando Git e GitHub, com domínio em
+                            versionamento de código e workflows de repositórios.
+                        </p>
+                    </div>
                 </div>
                 <div class="card">
                     <img src="/assets/figmapng.png" alt="">
-                    <p>Experiência em utilização e criação de design para projetos no FIGMA.</p>
-                </div>
-            </div>
-        </div>
-        <div id="projetos" class="item">
-            <h1 id="title">Projetos</h1>
-            <div class="projetosCarrossel" id="projetoCarrossel">
-
-
-                <div class="carousel-container">
-                    <button class="nav-btn" id="prevBtn">&#10094;</button>
-
-                    <div class="carousel-slide" id="carouselSlide">
-                        <div class="carousel-item">
-                            <img src="/assets/nf.png" alt="Imagem 1">
-                            <div class="text-box">
-                                <h2>Website Empresarial</h2>
-                                <p>Website estático projetado para exibir informações de uma empresa comercial em
-                                    Parnaíba.</p>
-                                <a href="https://caiocarvalho14.github.io/MERCANTIL-NICOLAU/" target="_blank">
-                                    <h1>Acessar</h1>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="/assets/cardapio.png" alt="Imagem 2">
-                            <div class="text-box">
-                                <h2>Loja Virtual</h2>
-                                <p>Projeto de e-commerce completo com carrinho de compras e pagamento integrado.</p>
-                                <a href="https://caiocarvalho14.github.io/CARDAPIO-LOVSOSWEET/" target="_blank">
-                                    <h1>Acessar</h1>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/assets/empresax.jpg" alt="Imagem 1">
-                            <div class="text-box">
-                                <h2>Projeto de aprendizado Empresa X</h2>
-                                <p>Website com sistema de cadastro e login com informações hospedadas no cache da
-                                    sessão. Cadastro e Login temporários funcionais.</p>
-                                <a href="https://caiocarvalho14.github.io/EMPRESA-X/" target="_blank">
-                                    <h1>Acessar</h1>
-                                </a>
-                            </div>
-                        </div>
-
+                    <div class="card-text">
+                        <h1>Design de Interfaces</h1>
+                        <p>Criação de protótipos e layouts responsivos utilizando o Figma, com foco em experiências de
+                            usuário modernas e intuitivas.
+                        </p>
                     </div>
-
-                    <button class="nav-btn" id="nextBtn">&#10095;</button>
                 </div>
-
             </div>
         </div>
-        <div id="setup" class="item">
-            <h1 id="title">Meu Setup</h1>
-            <div id="about-2-text">
-                <img src="/assets/setupimg.jpg" alt="">
+        <div id="projetos">
+            <h1 class="title scroll scroll-snap">Projetos</h1>
+            <div class="projetos item scroll" id="section-4">
+                <a href="https://caiocarvalho14.github.io/MERCANTIL-NICOLAU/" target="_blank">
+                    <div class="projeto" id="projeto1" title="Clique para acessar">
+                        <div class="overlay">Website Empresarial<br>Mercantil Nicolau Filho<br></div>
+                    </div>
+                </a>
+                <a href="https://caiocarvalho14.github.io/EMPRESA-X/" target="_blank">
+                    <div class="projeto" id="projeto2" title="Clique para acessar">
+                        <div class="overlay">Projeto de aprendizado Empresa X</div>
+                    </div>
+                </a>
+                <a href="https://caiocarvalho14.github.io/CARDAPIO-LOVSOSWEET/" target="_blank">
+                    <div class="projeto" id="projeto3" title="Clique para acessar">
+                        <div class="overlay">Loja Virtual</div>
+                    </div>
+                </a>
             </div>
         </div>
-        <div id="contato" class="item">
-            <h1 id="title">Contato</h1>
-            <div class="contato-links">
+        <div class="setup scroll" id="projetos">
+            <h1 class="title scroll-snap scroll">Meu Setup</h1>
+            <div class="item scroll"><img src="/assets/setupimg.jpg" alt=""></div>
+        </div>
+        <h1 class="title scroll scroll-snap" id="contato">Contato</h1>
+        <div id="contato" class="scroll">
+            <div class="contato-links scroll">
                 <a href="https://www.linkedin.com/in/caio-silva-carvalho-326269358/" id="link" target="_blank">
                     <i class='fab fa-linkedin'></i>
                     <div class="text">
@@ -150,7 +135,8 @@
                         <p>@caiocarvalho14</p>
                     </div>
                 </a>
-                <a href="https://www.instagram.com/caio.carvalho9/" id="insta" target="_blank"><i class='fab fa-instagram'></i>
+                <a href="https://www.instagram.com/caio.carvalho9/" id="insta" target="_blank"><i
+                        class='fab fa-instagram'></i>
                     <div class="text">
                         <h1>Instagram</h1>
                         <p>@caio.carvalho9</p>
@@ -171,13 +157,39 @@
                 </a>
             </div>
         </div>
-        <div class="rodape">projetado e desenvolvido por Caio Carvalho.
-            <br><a href="https://caiocarvalho.dev.br">www.caiocarvalho.dev.br</a>
-            <br>2025
-        </div>
+
+        <footer>
+            <h1>projetado e desenvolvido por Caio Carvalho. <br><a
+                    href="caiocarvalho.dev.br">www.caiocarvalho.dev.br</a><br>2025</h1>
+        </footer>
+        <button id="btnTopo"><i class='fas fa-angle-up'></i></button>
     </div>
-    <button id="btnTopo"><i class='fas fa-angle-up'></i></button>
-    <script src="script/script.js"></script>
+    <script src="/script/script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal().reveal('.scroll', {
+            distance: '10px',
+            duration: 1000,
+            easing: 'ease-out',
+            origin: 'center',
+            reset: true
+        });
+        const btnTopo = document.getElementById('btnTopo');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) { 
+                btnTopo.style.display = 'block';
+            } else {
+                btnTopo.style.display = 'none';
+            }
+        });
+        btnTopo.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 </body>
 
 </html>
