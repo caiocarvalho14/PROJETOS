@@ -60,6 +60,7 @@
         cursor: pointer;
         height: 70%;
         transition: 0.1s;
+        
     }
 
     #section-1>nav>img:hover {
@@ -94,6 +95,7 @@
     }
 
     #section-1>section>img {
+        filter: drop-shadow(30px 10px 4px #4444dd);
         width: 20%;
         border-radius: 2vh 2vh 0 0;
         background-color: #3a1de1;
@@ -136,7 +138,9 @@
     }
 
     #section-2>img {
-        border-radius: 3vh;
+        border-radius: 2vh 2vh 0 0;
+        background-color: #1d0e98;
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
         width: 40%;
     }
 
