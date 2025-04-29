@@ -160,7 +160,6 @@
     }
     #section-2>nav:hover{
         transition: 0.3s;
-        transform: scale(1.1);
         box-shadow: 0 0 30px rgb(255, 255, 255);
     }
     #section-2>nav>h1 {
