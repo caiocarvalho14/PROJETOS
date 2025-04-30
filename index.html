@@ -20,8 +20,8 @@
 
 <body>
     <div class="container">
-        <div id="section-1" class="scroll-snap">
-            <nav>
+        <div id="section-1" class="scroll-snap ">
+            <nav class="animate-gsap">
                 <img src="/assets/topSVG.svg" alt="">
                 <div class="nav-links">
                     <h1 id="about-link">Sobre</h1>
@@ -31,8 +31,8 @@
                 </div>
             </nav>
             <section>
-                <img src="/assets/home-selfie.png" alt="">
-                <div class="section1-text">
+                <img src="/assets/home-selfie.png" class="animate-img" alt="">
+                <div class="section1-text animate-gsap">
                     <h1>Caio Carvalho</h1>
                     <p>Desenvolvedor Front-End</p>
                     <a href="https://www.linkedin.com/in/caio-carvalho-326269358//" target="_blank"><i
@@ -177,6 +177,7 @@
     </div>
     <script src="/script/script.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script>
         ScrollReveal().reveal('.scroll', {
             distance: '10px',

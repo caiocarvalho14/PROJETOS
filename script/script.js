@@ -28,39 +28,58 @@ bandejas.forEach(bandeja => {
 });
 
 const text = "Caio Carvalho.";
-    const typedTextSpan = document.getElementById("typed-text");
-    let index = 0;
-    let started = false;
+const typedTextSpan = document.getElementById("typed-text");
+let index = 0;
+let started = false;
 
-    function typeLetter() {
-      if (index < text.length) {
-        typedTextSpan.textContent += text.charAt(index);
-        index++;
-        setTimeout(typeLetter, 50);
-      } else {
-        setTimeout(deleteLetter, 3000); 
-      }
+function typeLetter() {
+  if (index < text.length) {
+    typedTextSpan.textContent += text.charAt(index);
+    index++;
+    setTimeout(typeLetter, 50);
+  } else {
+    setTimeout(deleteLetter, 3000);
+  }
+}
+
+function deleteLetter() {
+  if (index > 0) {
+    typedTextSpan.textContent = text.substring(0, index - 1);
+    index--;
+    setTimeout(deleteLetter, 100);
+  } else {
+    setTimeout(typeLetter, 500);
+  }
+}
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && !started) {
+      started = true;
+      typeLetter();
     }
+  });
+}, {
+  threshold: 0.5
+});
 
-    function deleteLetter() {
-      if (index > 0) {
-        typedTextSpan.textContent = text.substring(0, index - 1);
-        index--;
-        setTimeout(deleteLetter, 100);
-      } else {
-        setTimeout(typeLetter, 500);
-      }
-    }
+observer.observe(typedTextSpan);
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting && !started) {
-          started = true;
-          typeLetter();
-        }
-      });
-    }, {
-      threshold: 0.5
-    });
-
-    observer.observe(typedTextSpan);
+window.addEventListener("load", () => {
+  gsap.from(".animate-gsap", {
+    y: 100,
+    opacity: 0,
+    duration: 3,
+    ease: "power2.out",
+    stagger: 0.3
+  });
+});
+window.addEventListener("load", () => {
+  gsap.from(".animate-img", {
+    y: 100,
+    opacity: 0,
+    duration: 3,
+    ease: "power2.out",
+    stagger: 0.3
+  });
+});
