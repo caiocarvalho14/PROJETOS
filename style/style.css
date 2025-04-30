@@ -212,14 +212,23 @@
         font-size: 4vh;
     }
 
-    #section-2>.item>a:hover {
-        color: #2b16bd;
-    }
-
     #about-item {
         box-shadow: 0 0 15px rgb(255, 255, 255);
     }
-
+    #about-links{
+        display: flex;
+        justify-content: space-between;
+        button{
+            cursor: pointer;
+            font-size: 1.6vw;
+        }
+        section{
+            font-size: 4vh;
+        }
+        a>i:hover{
+            color: #2b16bd;
+        }
+    }
     /* SECTION 3 */
     .cards {
         height: 70%;
