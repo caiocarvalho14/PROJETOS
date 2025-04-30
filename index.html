@@ -19,6 +19,27 @@
 </head>
 
 <body>
+    <script>
+        window.addEventListener("load", () => {
+            gsap.from(".animate-gsap", {
+                y: 100,
+                opacity: 0,
+                duration: 3,
+                ease: "power2.out",
+                stagger: 0.3
+            });
+        });
+        window.addEventListener("load", () => {
+            gsap.from(".animate-img", {
+                y: 100,
+                opacity: 0,
+                duration: 3,
+                ease: "power2.out",
+                stagger: 0.3
+            });
+        });
+
+    </script>
     <div class="container">
         <div id="section-1" class="scroll-snap ">
             <nav class="animate-gsap">
@@ -123,13 +144,15 @@
         <h1 class="title scroll scroll-snap" id="contato">Contato</h1>
         <div id="contato" class="scroll">
             <div class="contato-links scroll">
-                <a class="bandeja" href="https://www.linkedin.com/in/caio-carvalho-326269358/" id="link" target="_blank">
+                <a class="bandeja" href="https://www.linkedin.com/in/caio-carvalho-326269358/" id="link"
+                    target="_blank">
                     <i class='fab fa-linkedin'></i>
                     <div class="text">
                         <h1>Linkedin</h1>
                     </div>
                 </a>
-                <a class="bandeja" href="https://github.com/caiocarvalho14" id="git" target="_blank"><i class='fab fa-github'></i>
+                <a class="bandeja" href="https://github.com/caiocarvalho14" id="git" target="_blank"><i
+                        class='fab fa-github'></i>
                     <div class="text">
                         <h1>Github</h1>
                         <p>@caiocarvalho14</p>
@@ -142,13 +165,15 @@
                         <p>@caio.carvalho9</p>
                     </div>
                 </a>
-                <a class="bandeja" href="http://wa.me//86995633313" id="wpp" target="_blank"><i class='fab fa-whatsapp'></i>
+                <a class="bandeja" href="http://wa.me//86995633313" id="wpp" target="_blank"><i
+                        class='fab fa-whatsapp'></i>
                     <div class="text">
                         <h1>Whatsapp</h1>
                         <p>(86) 9 9563 - 3313</p>
                     </div>
                 </a>
-                <a class="bandeja" href="mailto:caioscphb@gmail.com" target="_blank"><i class='fas fa-envelope' id="email">
+                <a class="bandeja" href="mailto:caioscphb@gmail.com" target="_blank"><i class='fas fa-envelope'
+                        id="email">
                     </i>
                     <div class="text">
                         <h1>Envie um E-mail</h1>

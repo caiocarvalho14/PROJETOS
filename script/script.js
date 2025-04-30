@@ -65,21 +65,3 @@ const observer = new IntersectionObserver((entries) => {
 
 observer.observe(typedTextSpan);
 
-window.addEventListener("load", () => {
-  gsap.from(".animate-gsap", {
-    y: 100,
-    opacity: 0,
-    duration: 3,
-    ease: "power2.out",
-    stagger: 0.3
-  });
-});
-window.addEventListener("load", () => {
-  gsap.from(".animate-img", {
-    y: 100,
-    opacity: 0,
-    duration: 3,
-    ease: "power2.out",
-    stagger: 0.3
-  });
-});
