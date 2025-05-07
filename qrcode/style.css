@@ -1,0 +1,119 @@
+@media screen and (min-width:1000px) {
+    * {
+        margin: 0;
+    }
+    
+    body {
+        background: linear-gradient(to bottom, #0e0774, #00004f);
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        font-family: arial;
+        color: white;
+    }
+    
+    section {
+        padding: 5vh 0;
+        text-align: center;
+        width: 30%;
+        background-color: #4444dd;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+    }
+    input{
+        border-radius: 1vh;
+        background-color: #00004f;
+        color: rgba(255, 255, 255, 0.506);
+        border: none;
+        font-size: 3.5vh;
+        width: 60%;
+    
+    }
+    #qrcode {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #ccc;
+    
+        img {
+            width: 100%;
+        }
+    }
+    button{
+        cursor: pointer;
+        border-radius: 1vh;
+        width: 60%;
+        background-color: #00004f;
+        border: none;
+        color: white;
+        font-size: 3vh;
+    }
+    button:hover{
+        outline: auto;
+    }
+}
+@media screen and (max-width:1000px) {
+    * {
+        margin: 0;
+    }
+    
+    body {
+        background: linear-gradient(to bottom, #0e0774, #00004f);
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        font-family: arial;
+        color: white;
+        font-size: 2vh;
+    }
+    h2{
+        font-size: 3vh;
+    }
+    section {
+        padding: 5vh 0;
+        text-align: center;
+        width: 90%;
+        background-color: #4444dd;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+    }
+    input{
+        border-radius: 1vh;
+        background-color: #00004f;
+        color: rgba(255, 255, 255, 0.506);
+        border: none;
+        font-size: 3.5vh;
+        width: 90%;
+    
+    }
+    #qrcode {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #ccc;
+    
+        img {
+            width: 100%;
+        }
+    }
+    button{
+        cursor: pointer;
+        border-radius: 1vh;
+        width: 90%;
+        background-color: #00004f;
+        border: none;
+        color: white;
+        font-size: 3vh;
+    }
+    button:hover{
+        outline: auto;
+    }
+}
