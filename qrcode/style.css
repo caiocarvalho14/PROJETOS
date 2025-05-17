@@ -1,119 +1,40 @@
-@media screen and (min-width:1000px) {
-    * {
-        margin: 0;
-    }
-    
-    body {
-        background: linear-gradient(to bottom, #0e0774, #00004f);
-        display: flex;
-        height: 100vh;
-        align-items: center;
-        justify-content: center;
-        font-family: arial;
+*{
+    margin: 0;
+}body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #00004f;
+    color: white;
+}
+section{
+    background-color: #1d0e98;
+    padding: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+    input,button{
+        width: 100%;
         color: white;
+        background-color: #0e0774;
+        border: none;
+        border-radius: 1vh;
     }
-    
-    section {
-        padding: 5vh 0;
-        text-align: center;
-        width: 30%;
-        background-color: #4444dd;
-        height: 80%;
+    div{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 2vh;
-    }
-    input{
-        border-radius: 1vh;
-        background-color: #00004f;
-        color: rgba(255, 255, 255, 0.506);
-        border: none;
-        font-size: 3.5vh;
-        width: 60%;
-    
-    }
-    #qrcode {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid #ccc;
-    
-        img {
+        input{
             width: 100%;
         }
-    }
-    button{
-        cursor: pointer;
-        border-radius: 1vh;
-        width: 60%;
-        background-color: #00004f;
-        border: none;
-        color: white;
-        font-size: 3vh;
-    }
-    button:hover{
-        outline: auto;
     }
 }
-@media screen and (max-width:1000px) {
-    * {
-        margin: 0;
-    }
-    
-    body {
-        background: linear-gradient(to bottom, #0e0774, #00004f);
-        display: flex;
-        height: 100vh;
-        align-items: center;
-        justify-content: center;
-        font-family: arial;
-        color: white;
-        font-size: 2vh;
-    }
-    h2{
-        font-size: 3vh;
-    }
-    section {
-        padding: 5vh 0;
-        text-align: center;
-        width: 90%;
-        background-color: #4444dd;
-        height: 80%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2vh;
-    }
-    input{
-        border-radius: 1vh;
-        background-color: #00004f;
-        color: rgba(255, 255, 255, 0.506);
-        border: none;
-        font-size: 3.5vh;
-        width: 90%;
-    
-    }
-    #qrcode {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid #ccc;
-    
-        img {
-            width: 100%;
-        }
-    }
-    button{
-        cursor: pointer;
-        border-radius: 1vh;
-        width: 90%;
-        background-color: #00004f;
-        border: none;
-        color: white;
-        font-size: 3vh;
-    }
-    button:hover{
-        outline: auto;
-    }
+
+input[type="color"] {
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: none; 
 }
